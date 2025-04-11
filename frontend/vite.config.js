@@ -8,4 +8,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+  base:Process.env.VITE_BASE_PATH || "/Ankush-Belaladavar/paper-trading/tree/master"
 })
