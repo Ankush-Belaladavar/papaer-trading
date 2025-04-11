@@ -1,0 +1,119 @@
+/* Container styles */
+.p-4 {
+    padding: 1rem;
+  }
+  
+  .text-xl {
+    font-size: 1.25rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  /* Horizontal scroll styling */
+  ul.space-y-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    -ms-overflow-style: none;      /* IE/Edge */
+    scrollbar-width: none;         /* Firefox */
+  }
+  
+  ul.space-y-2::-webkit-scrollbar {
+    display: none;                 /* Chrome/Safari */
+  }
+  
+  /* Box styling */
+  li.cursor-pointer {
+    flex: 0 0 auto;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;                           /* Black font */
+    font-weight: 500;
+    width: clamp(180px, 30vw, 250px);      /* Responsive width */
+    height: 100px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  li.cursor-pointer:hover {
+    background-color: #f3f4f6;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 40px; /* larger */
+    height: 40px; /* larger */
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .scroll-button:hover {
+    background-color: rgba(243, 244, 246, 1);
+    transform: translateY(-50%) scale(1.05);
+  }
+  
+  .scroll-button.left {
+    left: -24px; /* placed outside */
+  }
+  
+  .scroll-button.right {
+    right: -24px; /* placed outside */
+  }
+  
+  .carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem; /* gives breathing space between carousel and buttons */
+  }
+  
